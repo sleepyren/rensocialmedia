@@ -1,0 +1,32 @@
+<head>
+
+<title>Ren Social Media</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<meta charset="utf-8" /> 
+<div class="summary">
+			Talk to your friends easily.
+					Talk to your friends quickly.
+		</div>
+
+	</head>
+<body id = outer>
+
+<h2>Login</h2>
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{/if}}
+<form method="POST" action="login">
+	<div>
+		<label for="username">Username:</label>
+		<input type="text" name="username" value="">
+	</div>
+	<div>
+		<label for="password">Password:</label> 
+		<input type="password" name="password" value="">
+	</div>
+	<div>
+		<input type="submit" value="Login">
+	</div>
+</form>
+
+</body>

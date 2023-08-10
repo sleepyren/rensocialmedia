@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>Ren Social Media</title>
+<link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<meta charset="utf-8" /> 
+<div class="summary">
+			Talk to your friends easily.
+			        Talk to your friends quickly.
+		</div>
+
+	</head>
+
+<body class = "self_page">
+{{#if user}}
+<img src = {{user.details.ppicture}}  style="height:200px;width:240px;" >  </a>
+<br>Welcome to {{user.username}}'s HomePage!
+
+<br><br>About: {{user.details.biography}} <br><br>
+Nickname(s): {{user.details.nickname}} <br><br>
+Date of Birth: {{user.details.DOB}} <br>
+
+ {{user.username}} in the flesh! <br>
+
+    <br><br><br>
+	<a href="/" class = "home-link">Home link</a> <br>
+    <a href="/change_self">Edit your profile here!</a> 
+{{else}}
+<a href="/register">Register</a> or <a href="/login">Login</a>
+{{/if}}
+</body>
+<!---
+<script>
+      const loadObject = () => {console.log(document.currentScript);}
+      window.onload = loadObject; 
+
+    </script>
+->
+	
+</html>

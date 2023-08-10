@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+
+		<script src="/socket.io/socket.io.js" defer></script>
+<title>Ren Social Media</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<meta charset="utf-8" /> 
+<div class="summary">
+			Talk to your friends easily.
+					Talk to your friends quickly.
+		</div>
+
+	</head>
+<body>
+
+	<div id="outer">
+		<header>
+			<nav class= "user_bar" id = "user_bar">{{#if user}} 
+					<!---<a href="self">Self</a>    -->
+					<a href = self> 
+					<img src = {{user.details.ppicture}} class='av'></a>  {{user.username}}{{else}}
+					{{/if}}
+				<span class="login-status" id = "login-status">
+					{{#if user}}{{else}}			
+					<a href="register">New user? Create an account here.</a> 
+					or <a href="login">Login here</a>
+					{{/if}}
+				</span>
+			</nav>
+		</header> 
+		<div id = "messageList">
+		<!---Messages: -->
+		</div>
+		</div> 
+	
+		{{#if user}}
+
+		{{/if}}
+
+
+	<script defer src = "/javascripts/main.js"></script>
+
+</body>
+</html>

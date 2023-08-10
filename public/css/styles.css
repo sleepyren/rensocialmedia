@@ -1,0 +1,198 @@
+body {
+	height: 100vh;
+	font-family: Garamond, sans-serif;
+	font-size: 1.25em;
+	background-color: #222;
+	text-align: center;
+	margin: auto;
+	margin-top: 0px;
+	padding: none;
+}
+
+.home-link {
+	position: absolute;
+	top: 0.25em;
+	left: 0.75em;
+}
+
+.login-status {
+	position: absolute;
+	top: 0.25em;
+	right: 0.75em;
+}
+
+header {
+	position: relative;
+	background-color: #ccddff;
+	margin: 0px;
+	height: 2em;
+	padding: 0.25em 1em 0em 1em;
+	/*text-align: right;*/
+}
+
+nav > a, nav > a:visited {
+	color: black;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+#outer {
+	width: 700px;
+	height: 100vh;
+	background-color: rgb(30,30,30);
+	margin: auto;
+	text-align: left;
+}
+
+div.content {
+	padding: 0em 1em 1em 1em;
+}
+
+.note {
+	color:#888; 
+	padding-top: 1em;
+}
+
+.error {
+	background-color: #eecccc;
+	padding: 0.25em;
+	margin-bottom: 1em;
+	text-align: center;	
+}
+
+.success {
+	background-color: #cceecc;
+	padding: 0.25em;
+}
+
+form div {
+	padding-bottom: 0.5em;
+}
+
+textarea {
+	width: 25em;
+	height: 12em;
+}
+
+form textarea, form input {
+	display: table-row;
+	
+}
+
+input {
+	border: 1px solid #555;
+	font-size: 1em;
+}
+
+.summary
+{
+	background-color: lightseagreen;
+	color: wheat;
+	width: 700px;
+	margin: auto;
+	
+}
+
+.message
+{
+	border: solid white 1px;
+	width: auto;
+	height: 15vh;
+	background-color: rgb(30,30,30);
+	color: rgb(113,152,174);
+	/*box-sizing: border-box;*/
+
+}
+.message_username
+{
+	background-color: rgb(30,30,30);
+	color: rgb(49,137,164);
+}
+.message_username:hover{
+	color: lightblue;
+ }
+
+.message_username img
+{
+position: relative;
+float: left;
+	width: 60px;
+  height: 60px;
+  border-radius: 70%;
+}
+.message_time_footer
+{
+	font-size: small;
+	text-align: right;
+}
+.send_message
+{
+	position: relative;
+	background-color: lightseagreen;
+	color: whitesmoke;
+	
+	height: 20%;
+	width: 30%;
+	bottom: 25vh;
+	
+	padding: 10px;
+	box-sizing: border-box;
+	margin: auto;
+}
+.user_bar 
+{
+	vertical-align: top;
+    margin: 0;
+    padding-left: 50px;
+	display: inline-block;
+
+	
+}
+
+.av
+{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 45px;
+  height: 45px;
+  border-radius: 70%;
+  float: left;
+}
+.user_bar:hover{
+	color: white;
+ }
+
+.self_page
+{
+	color: rgb(113,152,174);
+}
+.textbox
+{
+
+	width: fit-content;
+	background-color: rgb(250, 251, 252);
+	border-color: rgb(223, 225, 230);
+
+	border-radius: 3px;
+	border-width: 2px;
+	border-style: solid;
+	box-sizing: border-box;
+	cursor: text;
+	font-size: 14px;
+	transition: background-color 0.1s ease-in-out 0s, border-color 0.1s ease-in-out 0s;
+	line-height: 1.428; 
+	padding: 8px 6px;
+	height: 36px;
+
+	text-overflow: ellipsis;
+	}
+	.textbox:hover{
+		background-color: rgb(176, 176, 176);
+	}
+	.textbox:focus{
+		background-color: rgb(45, 122, 145);
+		border-color: rgb(76, 154, 255);
+	}

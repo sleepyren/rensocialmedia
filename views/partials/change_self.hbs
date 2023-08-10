@@ -1,0 +1,42 @@
+<head>
+
+<title>Ren Social Media</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<meta charset="utf-8" /> 
+<div class="summary">
+			Talk to your friends easily.
+					Talk to your friends quickly.
+		</div>
+
+	</head>
+<body id = outer style = "color : white">
+
+<h2>Customize your Profile!</h2>
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{/if}}
+<form method="POST" action="change_self">
+    <div>
+		<label for="biography"> Bio :</label>
+		<input type="text" name="biography" value="">
+	</div>
+
+    <div>
+        <label for="ppicture"> Add the link to your profile pic here!</label>
+        <input type = "url" name="ppicture">
+    </div>
+	<div>
+		<label for="nickname"> Also known as :</label>
+		<input type="text" name="nickname" value="nickname">
+	</div>
+	<div>
+    
+		<label for="DOB">Date of Birth :</label>
+        <input type="date" id="DOB" name="DOB">
+	</div>
+	<div>
+		<input type="submit" value="Submit">
+	</div>
+</form>
+
+</body>
